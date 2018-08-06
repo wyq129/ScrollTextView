@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context=".ScrollTextActivity">
+    <TextView
+        android:id="@+id/voice_tv_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="你好啊"
+        android:maxLength="38"
+        android:lines="2"
+        android:textSize="16sp"
+      />
+
+    <com.sunsky.marqueeview.MarqueeView
+        android:id="@+id/upview1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:animDuration="1000"
+        app:interval="5000"
+        app:isSetAlphaAnim="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止跳转"/>
+
+</LinearLayout>
