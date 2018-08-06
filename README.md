@@ -1,0 +1,2 @@
+# ScrollTextView
+Android单行垂直滚动已经多行垂直滚动
