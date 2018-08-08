@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    // Vertical marquee
+    <declare-styleable name="MarqueeViewUp">
+        <attr name="isSetAlphaAnim" format="boolean" />
+        <attr name="interval" format="integer" />
+        <attr name="animDuration" format="integer" />
+    </declare-styleable>
+</resources>

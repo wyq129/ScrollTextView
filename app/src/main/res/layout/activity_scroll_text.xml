@@ -21,14 +21,14 @@
         android:textSize="16sp"
       />
 
-    <com.sunsky.marqueeview.MarqueeView
+    <com.example.aiiage.scrolltextview.VerticalMarqueeView
         android:id="@+id/upview1"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         app:animDuration="1000"
-        app:interval="5000"
+        app:interval="2000"
         app:isSetAlphaAnim="true"
         android:visibility="gone"/>
     <TextView

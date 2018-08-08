@@ -8,20 +8,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.sunsky.marqueeview.MarqueeView;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.text.TextUtils.substring;
-
 public class ScrollTextActivity extends Activity {
-    private MarqueeView marqueeView1;
+    private VerticalMarqueeView marqueeView1;
     private TextView voice_tv_words,stop;
     List<String> data = new ArrayList<>();
     List<View> views1 = new ArrayList<>();
     static int Strint_size;
-    private boolean mStopMarquee;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +29,7 @@ public class ScrollTextActivity extends Activity {
      * 实例化控件
      */
     private void initParam() {
-       marqueeView1 = (MarqueeView) findViewById(R.id.upview1);
+       marqueeView1 = (VerticalMarqueeView) findViewById(R.id.upview1);
         voice_tv_words=findViewById(R.id.voice_tv_words);
         stop=findViewById(R.id.tv_stop);
         marqueeView1.setVisibility(View.GONE);
