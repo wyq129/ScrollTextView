@@ -11,6 +11,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author wangyanqin
+ * @date 2018/08/08
+ */
 public class ScrollTextActivity extends Activity {
     private VerticalMarqueeView marqueeView1;
     private TextView voice_tv_words,stop;

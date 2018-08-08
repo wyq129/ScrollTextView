@@ -17,6 +17,10 @@ import com.sunfusheng.marqueeview.MarqueeView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author wangyanqin
+ * @date
+ */
 public class MainActivity extends AppCompatActivity {
 
 
