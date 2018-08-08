@@ -33,7 +33,7 @@ public class ScrollTextActivity extends Activity {
      * 实例化控件
      */
     private void initParam() {
-       marqueeView1 = (VerticalMarqueeView) findViewById(R.id.upview1);
+        marqueeView1 = (VerticalMarqueeView) findViewById(R.id.upview1);
         voice_tv_words=findViewById(R.id.voice_tv_words);
         stop=findViewById(R.id.tv_stop);
         marqueeView1.setVisibility(View.GONE);
@@ -47,30 +47,30 @@ public class ScrollTextActivity extends Activity {
     private void initView() {
         data = new ArrayList<>();
         //final  String s="21wqsqwsqw";
-         String s="你听说过一见钟情吗？ 那个十二岁的夏天，校门口边上 他倚在单车边上，微微回头寻找我,我撞上他眼睛里,他撞进我心底 没有任何对话,他送了我一路,那段路好长好长,我走了好久好久。";
+        String s="你听说过一见钟情吗？ 那个十二岁的夏天，校门口边上 他倚在单车边上，微微回头寻找我,我撞上他眼睛里,他撞进我心底 没有任何对话,他送了我一路,那段路好长好长,我走了好久好久。";
         s = s.replaceAll("\t|\n", "");
         voice_tv_words.setText(s);
-                List<String> list =  getStrList(s,21);
-                for(int i=0;i<list.size();i++) {
-                    data.add(list.get(i));
-                }
-                if (Strint_size>2){
-                    voice_tv_words.setVisibility(View.GONE);
-                    marqueeView1.setVisibility(View.VISIBLE);
-                    if (s.isEmpty()){
-                        return;
-                    }
+        List<String> list =  getStrList(s,21);
+        for(int i=0;i<list.size();i++) {
+            data.add(list.get(i));
+        }
+        if (Strint_size>2){
+            voice_tv_words.setVisibility(View.GONE);
+            marqueeView1.setVisibility(View.VISIBLE);
+            if (s.isEmpty()){
+                return;
+            }
 
-                    setViewTwoLines();
-                    marqueeView1.setViews(views1);
-                }
+            setViewTwoLines();
+            marqueeView1.setViews(views1);
+        }
 
-                else
-                {
-                    voice_tv_words.setText(s);
-                    voice_tv_words.setVisibility(View.VISIBLE);
-                    marqueeView1.setVisibility(View.GONE);
-                }
+        else
+        {
+            voice_tv_words.setText(s);
+            voice_tv_words.setVisibility(View.VISIBLE);
+            marqueeView1.setVisibility(View.GONE);
+        }
 
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +86,7 @@ public class ScrollTextActivity extends Activity {
 
 
     private void setViewTwoLines() {
-        views1.clear();//记得加这句话，不然可能会产生重影现象
+        views1.clear();//去除重影现象
         for (int i = 0; i < data.size(); i = i + 2) {
             final int position = i;
             //设置滚动的单个布局
@@ -100,11 +100,10 @@ public class ScrollTextActivity extends Activity {
             if (data.size() > i + 1) {
                 //奇数条
                 tv2.setText(data.get(i + 1).toString());
-            } else {//偶数条
-                //因为淘宝那儿是两条数据，但是当数据是奇数时就不需要赋值第二个，所以加了一个判断，还应该把第二个布局给隐藏掉
+            } else {
                 //moreView.findViewById(R.id.rl2).setVisibility(View.GONE);
                 //修改了最后一个没有 将第一个拼接到最后显示
-               // tv2.setText(data.get(0).toString());
+                // tv2.setText(data.get(0).toString());
             }
             //添加到循环滚动数组里面去
             views1.add(moreView);
