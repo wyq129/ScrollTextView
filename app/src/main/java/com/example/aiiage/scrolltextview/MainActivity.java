@@ -30,11 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         marqueeView=findViewById(R.id.marqueeView);
-        List<String> info = new ArrayList<>();
-        info.add("1. 大家好，我是酥小鱼。");
-        info.add("2. 欢迎大家关注我哦！");
-        info.add("3. QQ交流群：589780530");
-        info.add("4. 个人博客：https://blog.csdn.net/weixin_38703938");
         String info1="啊上的地位的我的我的风采违反阿达就是客户的亲卫队牛牛牛牛牛牛牛牛啊实打实大苏打西安市东西啊是大中心城市的常见的穆斯林课程但是每次都是1";
         //marqueeView.startWithFixedWidth(info1);
         // marqueeView.startWithList(info);
