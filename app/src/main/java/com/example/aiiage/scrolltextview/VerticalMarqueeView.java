@@ -15,8 +15,9 @@ import java.util.List;
 /**
  * AiiageSteamRobot
  *
- * @author Anter lu.xd@aiiage.com
- * @date 2018/7/23
+ *
+ * @author wangyanqin
+ * @date 2018/08/08
  */
 
 public class VerticalMarqueeView extends ViewFlipper {
